@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume - Karthi</title>
+    <title>Resume - KARTHI</title>
     <style>
         body {
             font-family: "Times New Roman", Times, serif;
@@ -11,32 +11,24 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 150vh;
+            height: 100vh;
             margin: 0;
         }
         .resume {
-            width: 500px;
+            width: 400px;
             background-color: #ffffff;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
-           
         }
         .header {
-
-            align-items: center;
+            text-align: center;
         }
-        #profile-pic{
+        .header img {
             width: 100px;
             height:100px;
             border-radius: 50%;
-           margin-right: 20px;
         }
-        ul {
-            padding-left: 20px;
-        }
-
         h1 {
             margin: 10px 0;
             font-size: 24px;
@@ -67,17 +59,14 @@
 <body>
     <div class="resume">
         <div class="header">
-        <input type="file" id="imageUpload" accept="image/*">
-        <img id="profile-pic" src="" alt="Profile Picture" style="display:none;">
-        
-        <div>
-           <h1>KARTHI A</h1>
+            <img src="K.jpg" alt="karthi">
+            <h1>KARTHI A</h1>
             <p>Bachelor of Science in Computer Science</p>
-<p>📞 8438446052 </p> 
-<p>📍 48L housing unit mettupalayam 641305</p>
-<p>✉ K31141826@gmail.com/p>
-</div>
-</div>
+<p>📞 8438446052</p> 
+<p>📍48L housing unit mettupalayam 641305</p>
+<p>✉  K31141826@gmail.com</p>
+
+        </div>
         <div class="section">
             <h2>About Me</h2>
             <p>Highly motivated Computer Science Graduate with a passion for developing innovative software solutions. </p>
@@ -85,7 +74,7 @@
         <div class="section">
             <h2>Study</h2>
             <ul>
-                <li> Government higher secondary school , mettupalayam</li>
+                <li> Government higher secondary school , Mettupalayam</li>
             </ul>
         </div>
         <div class="section">
@@ -96,6 +85,7 @@
                 <li>Strong Communication</li>
                 <li>Master English</li>
                 <li>Public Speaking</li>
+                <li>Interviewing</li>
             </ul>
         </div>
         <div class="section">
@@ -119,21 +109,7 @@
                 <li>TNSDC-FEWD &Cloud</li>
                 </ul>
         </div>
+       
     </div>
-<script>
-        document.getElementById('imageUpload').addEventListener('change', function(event) {
-            const file = event.target.files[0];
-            if (file) {
-                const reader = new FileReader();
-                reader.onload = function(e) {
-                    const img = document.getElementById('profile-pic');
-                    img.src = e.target.result;
-                    img.style.display = 'block';
-                }
-                reader.readAsDataURL(file);
-            }
-        });
-    </script>
-
 </body>
 </html>
